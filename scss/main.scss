@@ -1,0 +1,70 @@
+@import "config";
+@import "utilities";
+@import "menu";
+
+// Reset
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+// General styles
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: $light-color;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+#header-home {
+  background-image: url('../img/mobile-header-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  // min-height: 100vh;
+  margin-bottom: 3rem;
+  color: $light-color;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+// .header-content-a {
+// margin-top: 3rem;
+// padding-bottom: 4rem;
+// }
+
+.header-content-b {
+  max-width: 90vw;
+
+}
+
+
+// Import media queries
+@import "media";

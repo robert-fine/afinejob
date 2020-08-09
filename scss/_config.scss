@@ -1,0 +1,22 @@
+// Variables
+$widescreen-width: 1280px;
+$mobile-width: 600px;
+$main-color: #0E0B47;
+$secondary-color: #7AB4C1;
+$highlight-color: #E3B118;
+$highlight-color-hover: #BB8F00;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$medium-color: #ccc;
+$menu-speed: 0.75s;
+
+// Set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return red;
+  }
+
+  @else {
+    @return #fff;
+  }
+}

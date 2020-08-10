@@ -5,6 +5,23 @@
   overflow: hidden;
 }
 
+// padding
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.flex {
+  display: flex;
+}
+
 // Backgrounds
 .bg {
   &-main {
@@ -36,8 +53,29 @@
   color: $dark-color;
   display: inline-block;
   font-weight: bold;
+  border: 2px solid $highlight-color;
 
   &:hover {
     background-color: $highlight-color-hover;
+    border: 2px solid $highlight-color-hover;
   }
+}
+
+.btn-secondary {
+  background-color: $main-color;
+  padding: 0.75rem 2rem;
+  margin-top: 2rem;
+  color: $light-color;
+  display: inline-block;
+  font-weight: normal;
+  border: solid 2px $secondary-color;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $dark-color;
+  }
+}
+
+.header-secondary-cta {
+  margin-left: 0;
 }

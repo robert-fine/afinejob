@@ -21,17 +21,22 @@ body {
   background: $light-color;
 }
 
-p {
-  font-size: 1.5rem;
-}
+// p {
+//   // font-size: 1.25rem;
+// }
 
 h1 {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
 a {
   text-decoration: none;
   color: $dark-color;
+  // font-size: 1.25rem;
 }
 
 ul {
@@ -51,18 +56,89 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
 }
 
-// .header-content-a {
-// margin-top: 3rem;
-// padding-bottom: 4rem;
-// }
+.header-content-a {
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+}
 
 .header-content-b {
-  max-width: 90vw;
+  max-width: 75vw;
+}
 
+// hours (about page)
+.hours-table {
+  width: 100%;
+}
+
+/* Contact */
+.contact-wrapper {
+  flex-direction: column;
+}
+
+form {
+  flex-basis: 60%;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  background: $light-color;
+  left: 2rem;
+  top: 0.25rem;
+}
+
+.text-input {
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
+  background: $light-color;
+  border: 1px $dark-color solid;
+  font-size: large;
+}
+
+.contact-info {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socials ul {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+
+/* Footer */
+footer {
+  height: 3rem;
+  background: $dark-color;
+  color: $light-color;
+  text-align: center;
+}
+
+.footer-content {
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: small;
+  padding-top: 1rem;
+}
+
+.footer-icon {
+  padding-top: 1rem;
+  color: $light-color;
+}
+
+.footer-icon:hover {
+  color: $highlight-color;
 }
 
 

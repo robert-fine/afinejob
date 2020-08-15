@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -44,11 +44,10 @@ ul {
 }
 
 #header-home {
-  background-image: url('../img/mobile-header-background.svg');
+  // background-image: url('../img/mobile-header-background.svg');
+  background-image: linear-gradient(to right bottom, #03020f, #0a051e, #0d082c, #0c0b39, #0d0b47);
   background-repeat: no-repeat;
   background-size: cover;
-  // min-height: 100vh;
-  margin-bottom: 3rem;
   color: $light-color;
 }
 
@@ -56,22 +55,81 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 100vh;
+  min-height: 70vh;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 
 .header-content-a {
-  margin-top: 3rem;
-  padding-bottom: 4rem;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .header-content-b {
   max-width: 75vw;
 }
 
+.quote-btn {
+  text-align: center;
+}
+
+.btn-secondary {
+  padding: 0.75rem 2rem;
+  margin-top: 2rem;
+  color: $light-color;
+  display: inline-block;
+  font-weight: normal;
+  border: solid 2px $secondary-color;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $dark-color;
+  }
+}
+
+// Services
+#services {
+  padding: 4rem 0;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  padding-top: 1.5rem;
+}
+
+.sub-text {
+  font-size: .9rem;
+}
+
+.list-2,
+.list-3,
+.service-list-download {
+  margin-top: 2rem;
+}
+
+// About
+.about-img {
+  position: relative;
+  width: 100%;
+  max-width: 830px;
+  margin-top: 2rem;
+}
+
 // hours (about page)
 .hours-table {
-  width: 100%;
+  max-width: 90%;
+  height: auto;
+  overflow: hidden;
+}
+
+// map
+.location-map {
+  max-width: 85vw;
 }
 
 /* Contact */

@@ -22,12 +22,12 @@
       <div class="menu">
         <div class="nav-logo-link">
           <a href="index.html">
-            <img src="img/nav_logo_110x110.png" alt="A Fine Job, LLC logo" id=" nav-logo">
+            <img src="img/nav_logo_110x110.png" alt="A Fine Job, LLC logo" id=" nav-logo" />
           </a>
         </div>
         <ul class="nav-links">
           <li><a href="about.html" class="current">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="index.html#services">Services</a></li>
           <!-- <li><a href="#">Reviews</a></li> -->
           <li><a href="#contact">Contact</a></li>
           <li>
@@ -43,10 +43,32 @@
       <li class="about">
         <section class="about-us py-3">
           <h1 class="py-1">About Us</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, recusandae nulla numquam maxime eum vel
-            corrupti cum temporibus dolor beatae atque maiores ratione et corporis est eius soluta, laborum minima modi
-            veritatis commodi. Amet, velit quae. Sed libero, itaque debitis unde praesentium, optio modi vero mollitia,
-            quidem rem corrupti natus.</p>
+          <h2 class="py-1">Our Team</h2>
+          <ul>
+            <li>Julianna - <span class="sub-text">"The Muscle"</span>
+            </li>
+            <li class="py-1">With a passion for cleaning (yes, she actually ENJOYS cleaning), Julianna goes the extra
+              mile to make sure your home is up to her high standards of clean.</li>
+          </ul>
+          <ul class="pt-1">
+            <li>Robert - <span class="sub-text">"The Brains"</span></li>
+            <li class="py-1">Technologically inclined, Robert takes care of all the paperwork and behind the scenes
+              boring stuff.
+            </li>
+          </ul>
+          <h2 class="py-1">Our Mission</h2>
+          <p>
+            We know what it feels like to be torn between doing things you want to do, such as spending time with
+            family, and doing things you have to do, like cleaning your home. We aim to give you more of your free time
+            back
+            by alleviating some of your household workload.
+          </p>
+          <picture>
+            <source media="(max-width: 799px)" srcset="img/cleaning-service-banner-500px-w.jpg" class="about-img" />
+            <source media="(min-width: 800px)" srcset="img/cleaning-service-banner.jpg" class="about-img" jpg" />
+            <img src="img/cleaning-service-banner.jpg" class="about-img"
+              alt="residential and commercial cleaning service banner" />
+          </picture>
         </section>
       </li>
       <li class="hours-loc">
@@ -74,14 +96,17 @@
           <p>Locally owned and operated in Lafayette,&nbsp;LA</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220689.345961134!2d-92.16066819134616!3d30.200810997903314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7d3d6fa66d62330!2sA%20Fine%20Job%2C%20LLC!5e0!3m2!1sen!2sus!4v1597000932549!5m2!1sen!2sus"
-            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+            width="400" height="300" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0" class="location-map"></iframe>
         </section>
       </li>
     </ul>
     <section id="contact" class="py-3">
       <h2 class="section-title">Contact Me</h2>
-      <p class="py-2">Use the form below or send me an email for any questions, comments, reviews, etc.</p>
+      <p class="py-2">
+        Use the form below or send me an email for any questions, comments,
+        reviews, etc.
+      </p>
       <!-- Section A: Contact Form -->
       <ul class="contact-wrapper flex">
         <li class="form">
@@ -156,11 +181,10 @@
   </footer>
   <div id="bottom-nav">
     <div class="container flex">
-      <a href="#" class="btn-secondary bottom-nav-btn">Services</a>
+      <a href="index.html#services" class="btn-secondary bottom-nav-btn">Services</a>
       <a href="#" class="btn bottom-nav-btn">Get Quote</a>
     </div>
   </div>
-  <script src="app.js"></script>
 </body>
 
 </html>

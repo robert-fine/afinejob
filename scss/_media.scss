@@ -9,6 +9,14 @@
     display: none;
   }
 
+  .nav {
+    background-color: $main-color;
+  }
+
+  .nav-home {
+    background-color: inherit;
+  }
+
   .menu {
     visibility: visible;
     height: auto;
@@ -16,6 +24,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    background-image: unset;
   }
 
   .nav-logo-link {
@@ -38,19 +47,55 @@
   }
 
   #header-home {
-    background-image: url('../img/header-background.svg');
+    background-image: linear-gradient(to right bottom,
+        #03020f,
+        #0a051e,
+        #0d082c,
+        #0c0b39,
+        #0d0b47);
     background-size: cover;
   }
 
   .header-content {
     flex-direction: row;
-    height: 80vh;
+    min-height: 50vh;
   }
 
   .header-secondary-cta {
     margin-left: 1rem;
   }
 
+  // Services
+  .list-1 {
+    grid-area: list-1;
+  }
+
+  .list-2 {
+    grid-area: list-2;
+    margin-top: inherit;
+  }
+
+  .list-3 {
+    grid-area: list-3;
+    margin-top: inherit;
+  }
+
+  .service-list-download {
+    grid-area: footer;
+    margin-top: inherit;
+  }
+
+  .services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'list-1 list-2 list-3'
+      'footer footer footer';
+    gap: 1.5rem;
+  }
+
+  // About
   .about {
     padding-right: 2rem;
   }
@@ -61,7 +106,7 @@
   }
 
   .hours-loc {
-    padding-top: .25rem;
+    padding-top: 0.25rem;
   }
 
   .contact-wrapper {
@@ -81,10 +126,11 @@
   .contact-info {
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: .75rem;
+    padding-top: 0.75rem;
   }
 }
 
+// @media (min-width: 1450px) {}
 
 //   // Nav
 //   #nav {

@@ -18,6 +18,10 @@
   padding: 2rem 0;
 }
 
+.pt-1 {
+  padding-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -58,21 +62,6 @@
   &:hover {
     background-color: $highlight-color-hover;
     border: 2px solid $highlight-color-hover;
-  }
-}
-
-.btn-secondary {
-  background-color: $main-color;
-  padding: 0.75rem 2rem;
-  margin-top: 2rem;
-  color: $light-color;
-  display: inline-block;
-  font-weight: normal;
-  border: solid 2px $secondary-color;
-
-  &:hover {
-    background-color: $secondary-color;
-    color: $dark-color;
   }
 }
 

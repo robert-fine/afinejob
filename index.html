@@ -13,45 +13,90 @@
 
 <body>
   <header id="header-home">
-    <nav class="container">
-      <input type="checkbox" class="toggler" />
-      <div class="hamburger">
-        <i class="fas fa-bars fa-2x"></i>
-        <i class="fas fa-times fa-2x"></i>
-      </div>
-      <div class="menu">
-        <div class="nav-logo-link">
-          <a href="index.html">
-            <img src="img/nav_logo_110x110.png" alt="A Fine Job, LLC logo" id=" nav-logo">
-          </a>
+    <nav class="nav nav-home">
+      <div class="container">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger">
+          <i class="fas fa-bars fa-2x"></i>
+          <i class="fas fa-times fa-2x"></i>
         </div>
-        <ul class="nav-links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Services</a></li>
-          <!-- <li><a href="#">Reviews</a></li> -->
-          <li><a href="about.html#contact">Contact</a></li>
-          <li>
-            <a target="_blank" href="https://checkout.square.site/pay/acd6c696f95249869bffd0d492dffe9c"
-              rel="nofollow">Pay Bill</a>
-          </li>
-        </ul>
+        <div class="menu">
+          <div class="nav-logo-link">
+            <a href="index.html">
+              <img src="img/nav_logo_110x110.png" alt="A Fine Job, LLC logo" id=" nav-logo" />
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#">Reviews</a></li> -->
+            <li><a href="about.html#contact">Contact</a></li>
+            <li>
+              <a target="_blank" href="https://checkout.square.site/pay/acd6c696f95249869bffd0d492dffe9c"
+                rel="nofollow">Pay Bill</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="header-content container">
       <div class="header-content-a">
         <h1>Your free time shouldn't be spent cleaning</h1>
         <br />
-        <p>Let us do the hard work</p>
+        <p>Spend more time doing what you love and let us do the hard work</p>
         <div class="header-btns">
-          <a href="#" class="btn">Request a Quote</a>
-          <a href="#" class="btn-secondary header-secondary-cta">View Services</a>
+          <a href="tel:+13373064543" class="btn quote-btn">Call for Quote<br>(337) 306-4543</a>
         </div>
       </div>
-      <img src="img/header-vacuum-v4.png" alt="illustration of person vacuuming" class="header-content-b" />
+      <img src="img/header-vacuum.png" alt="illustration of person vacuuming" class="header-content-b" />
     </div>
   </header>
-  <main>
-
+  <main class="container">
+    <section id="services">
+      <h2 class="py-2">Services</h2>
+      <ul class="services-list">
+        <li class="list-1">
+          <span class="service-title">Standard Cleaning</span>
+          <ul class="service-items py-1">
+            <li>&#9670; Dusting surfaces, furniture, and baseboards</li>
+            <li>&#9670; Vacuuming floors</li>
+            <li>&#9670; Cleaning and disinfecting bathroom(s)</li>
+            <li>&#9670; Cleaning and disinfecting kitchen</li>
+            <li>&#9670; and more...</li>
+          </ul>
+        </li>
+        <li class="list-2">
+          <span class="service-title">Deep Cleaning</span>
+          <br />
+          <span class="sub-text">Includes everything in Standard Cleaning, plus:</span>
+          <ul class="service-items py-1">
+            <li>
+              &#9670; Damp wipe baseboards, door panels, and window sills
+            </li>
+            <li>&#9670; Vacuum upholstered furniture</li>
+            <li>&#9670; Cobweb removal</li>
+            <li>&#9670; Deep clean blinds</li>
+            <li>&#9670; and more...</li>
+          </ul>
+        </li>
+        <li class="list-3">
+          <span class="service-title">Add ons</span>
+          <br />
+          <span class="sub-text">May be added to any cleaning</span>
+          <ul class="service-items py-1">
+            <li>&#9670; Carpet shampooing</li>
+            <li>&#9670; Carpet spot removal</li>
+            <li>&#9670; Small appliance cleaning</li>
+            <li>&#9670; Garbage can sanitation</li>
+            <li>&#9670; Wash, fold, and put away laundry</li>
+            <li>&#9670; and more...</li>
+          </ul>
+        </li>
+        <li class="service-list-download">
+          <a href="A-Fine-Job-Services-List.pdf" target="_blank">Click here for a full list of services (pdf)</a>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer>
     <div class="footer-content container flex">
@@ -62,11 +107,10 @@
   </footer>
   <div id="bottom-nav">
     <div class="container flex">
-      <a href="#" class="btn-secondary bottom-nav-btn">Services</a>
-      <a href="#" class="btn bottom-nav-btn">Get Quote</a>
+      <a href="#services" class="btn-secondary bottom-nav-btn">Services</a>
+      <a href="tel:+13373064543" class="btn bottom-nav-btn">(337)306-4543</a>
     </div>
   </div>
-  <script src="app.js"></script>
 </body>
 
 </html>

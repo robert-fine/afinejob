@@ -349,6 +349,14 @@ ul {
   overflow: hidden;
 }
 
+.hours-table td {
+  padding-bottom: .25rem;
+}
+
+.hours-day {
+  padding-right: 1rem;
+}
+
 .location-map {
   max-width: 85vw;
 }

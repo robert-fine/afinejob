@@ -125,9 +125,18 @@ ul {
   max-width: 90%;
   height: auto;
   overflow: hidden;
+
+  td {
+    padding-bottom: .25rem;
+  }
+}
+
+.hours-day {
+  padding-right: 1rem;
 }
 
 // map
+
 .location-map {
   max-width: 85vw;
 }

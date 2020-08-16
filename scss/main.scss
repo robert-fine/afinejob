@@ -1,6 +1,6 @@
-@import "config";
-@import "utilities";
-@import "menu";
+@import 'config';
+@import 'utilities';
+@import 'menu';
 
 // Reset
 * {
@@ -19,6 +19,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background: $light-color;
+  scroll-behavior: smooth;
 }
 
 // p {
@@ -45,7 +46,14 @@ ul {
 
 #header-home {
   // background-image: url('../img/mobile-header-background.svg');
-  background-image: linear-gradient(to right bottom, #03020f, #0a051e, #0d082c, #0c0b39, #0d0b47);
+  background-image: linear-gradient(
+    to right bottom,
+    #03020f,
+    #0a051e,
+    #0d082c,
+    #0c0b39,
+    #0d0b47
+  );
   background-repeat: no-repeat;
   background-size: cover;
   color: $light-color;
@@ -103,7 +111,7 @@ ul {
 }
 
 .sub-text {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .list-2,
@@ -127,7 +135,7 @@ ul {
   overflow: hidden;
 
   td {
-    padding-bottom: .25rem;
+    padding-bottom: 0.25rem;
   }
 }
 
@@ -208,6 +216,5 @@ footer {
   color: $highlight-color;
 }
 
-
 // Import media queries
-@import "media";
+@import 'media';

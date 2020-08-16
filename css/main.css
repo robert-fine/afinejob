@@ -236,6 +236,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background: #f4f4f4;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -327,7 +328,7 @@ ul {
 }
 
 .sub-text {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .list-2,
@@ -350,7 +351,7 @@ ul {
 }
 
 .hours-table td {
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
 }
 
 .hours-day {

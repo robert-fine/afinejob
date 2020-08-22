@@ -31,6 +31,15 @@
     width: 100%;
   }
 
+  .svg-logo {
+    height: inherit;
+  }
+
+  // .svg-hidden {
+  //   height: 0vh;
+  //   width: 0vw;
+  // }
+
   .nav-links {
     display: flex;
     flex-direction: row;

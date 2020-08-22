@@ -5,6 +5,10 @@
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .py-1 {
   padding: 1rem 0;
 }
@@ -118,6 +122,14 @@
 .menu .nav-logo-link {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+#nav-logo {
+  width: 95vw;
+}
+
+.svg-logo {
+  height: 30vh;
 }
 
 /* bottom Nav */
@@ -273,7 +285,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 70vh;
+  min-height: 90vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -306,6 +318,12 @@ ul {
 .btn-secondary:hover {
   background-color: #7AB4C1;
   color: #333;
+}
+
+.svg-hidden {
+  height: 0vh;
+  width: 0vw;
+  position: absolute;
 }
 
 #services {
@@ -474,6 +492,9 @@ footer {
   }
   .nav-logo-link {
     width: 100%;
+  }
+  .svg-logo {
+    height: inherit;
   }
   .nav-links {
     display: -webkit-box;

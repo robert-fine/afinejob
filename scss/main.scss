@@ -20,6 +20,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: $light-color;
   scroll-behavior: smooth;
+  min-height: 100vh;
+  height: 100%;
 }
 
 // p {
@@ -191,6 +193,23 @@ form {
   flex-direction: row;
   justify-content: flex-start;
   padding-top: 1rem;
+}
+
+// Reviews
+
+// Submit reviews
+.submit-reviews-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.fa-star {
+  color: $highlight-color;
+}
+
+.review-text {
+  padding: 1rem 0;
 }
 
 /* Footer */
